@@ -1,4 +1,4 @@
-message: Hello I am from config server updated ha haaaaa
+message: Hello I am from config server
 kafka:
   order_placed_topic: order-placed-topic
 
