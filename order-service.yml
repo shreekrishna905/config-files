@@ -9,6 +9,8 @@ logging:
   level:
     root: INFO
 spring:
+  config:
+    import: "optional:configserver:"
   kafka:
     bootstrap-servers: localhost:9092
     consumer:
