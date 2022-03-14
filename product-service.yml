@@ -1,0 +1,19 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      authentication-database: admin
+      username: root
+      password: root
+      database: products
+  kafka:
+    consumer:
+      group-id: product-stock-update
+      auto-offset-reset: earliest
+      bootstrap-servers: localhost:9092
+
+server:
+  port=: 8081
