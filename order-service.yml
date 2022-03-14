@@ -21,6 +21,9 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
   data:
     mongodb:
-      host: mongodatabase
-      port: 27018
+      host: 127.0.0.1
+      port: 27017
+      authentication-database: admin
+      username: root
+      password: root
       database: orders
