@@ -1,18 +1,22 @@
-message: Hello I am from config server
 kafka:
   order_placed_topic: order-placed-topic
+app:
+  topic:
+    shopping_cart_query_topic: shopping_cart_query_topic
+    create_order_topic: create_order_topic
 
 server:
-  port: 8085
+  port: 8083
 
 logging:
   level:
     root: INFO
+
 spring:
   kafka:
     bootstrap-servers: localhost:9092
     consumer:
-      group-id: order-groups
+      group-id: gid
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
@@ -26,4 +30,4 @@ spring:
       authentication-database: admin
       username: root
       password: root
-      database: orders_db
+      database: shopping_cart_command_db

@@ -8,7 +8,7 @@ spring:
       authentication-database: admin
       username: root
       password: root
-      database: products
+      database: products_db
   kafka:
     consumer:
       group-id: product-stock-update

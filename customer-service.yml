@@ -6,6 +6,6 @@ spring:
       authentication-database: admin
       username: root
       password: root
-      database: customers
+      database: customers_db
 server:
   port=: 8082
