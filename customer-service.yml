@@ -2,5 +2,4 @@ spring:
   data:
     mongodb:
       database: customers_db
-server:
-  port=: 0
+

@@ -2,12 +2,6 @@ message: Hello I am from config server
 kafka:
   order_placed_topic: order-placed-topic
 
-server:
-  port: 0
-
-logging:
-  level:
-    root: INFO
 spring:
   kafka:
     bootstrap-servers: localhost:9092
