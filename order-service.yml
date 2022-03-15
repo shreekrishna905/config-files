@@ -3,7 +3,7 @@ kafka:
   order_placed_topic: order-placed-topic
 
 server:
-  port: 8085
+  port: 0
 
 logging:
   level:

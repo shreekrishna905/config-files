@@ -6,7 +6,7 @@ app:
     create_order_topic: create_order_topic
 
 server:
-  port: 8083
+  port: 0
 
 logging:
   level:
